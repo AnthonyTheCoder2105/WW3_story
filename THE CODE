@@ -1,0 +1,88 @@
+print('''In 2095 it is WW3 and you are in a bunker, a 
+grenade falls through the door of the bunker, what do you do.''') ## write a little background inside the parentheses
+answer1 = int(input(''' 
+1 - cry
+2 - pray to god
+3 - throw it back up
+4 - defuse it'''))
+if answer1 == 1:
+    print('''the grenade exploded, you died.(bad ending)''')
+if answer1 == 2:
+    print('''god defused the bomb, you live.(holy ending)''')
+if answer1 == 3:
+    ans2 = input('''are you athletic and have good aim?
+    y - yes
+    n - no''')
+    if ans2 == "y":
+        ans2_3 = int(input('''you managed to throw the grenade out of the hole and 
+        kill the intruder. you live.(athletic ending).you exit the bunker and see you
+            are surrounded by russian (who are the enemy) soldiers what do you do?
+            1 - run
+            2 - get captured
+            3 - resist against them
+            4 - distraction dance'''))
+        if ans2_3 == 1:
+            print("you escaped but got shot on the leg.")
+        if ans2_3 == 3:
+            print('''you got shot and died.''')
+        if ans2_3 == 4:
+            print('''the soldiers was not amused and shot you. you bled to death.''')
+        if ans2_3 == 2:
+            ans_captured = int(input('''you are captured and you are tortured,
+            they are trying to get information out of you. what do you do?
+            1 - reveal secret info to the other side and betray your country.
+            2 - keep your mouth shut and be tortured so you can protect your country.
+            3 - attempt to escape.
+            4 - die because you're depressed.'''))
+            if ans_captured == 1:
+                print('they let you go back under one condition. you be a spy.')
+            if ans_captured == 2:
+                print('they eventually got impatient and decided to send you to a death camp where you will be killed.')
+            if ans_captured ==3:
+                ans_escaped1 = int(input('''you remove the bristles off your toothbrush and shapen the wooden handle into a sharp point.
+                when the time comes you reveal to your fellow inmates what is going on and tell them to sharpen their toothbrushes
+                too. it will be split into two teams the distraction team and the escape team so
+                the distraction team will cause a distraction for the guards like a food fight
+                so the guards will be distracted and you and your friends will escape
+                then you save the distraction team as well.
+                a few days later, you are walking in the woods and you spot some russian people.
+                what do you do?
+                1 - tell the others and continue walking.
+                2 - say hi to the strangers.
+                3 - run away by yourself.
+                4 - KILL THEM.( desperate option only ).'''))
+                if ans_escaped1 == 1:
+                    ans_escaped1_1 = int(input('''you told the others and ran and hid with your team until they were
+                    gone.
+                    now a few days later you are at the ukrainian border. someone shouts Putin (who is the
+                    president of russia) or Biden (who is the president of the United States).
+                    what do you do?
+                    1 - say Biden!
+                    2 - say Putin!
+                    3 - attempt to climb the wall
+                    4 - pretend like you don't know their language'''))
+                    if ans_escaped1_1 == 4:
+                        print('''you know a little bit of russian so you said я не знаю, что ты говоришь
+                        which translates to "i do not know what you are saying" and the guards thought you
+                        were a russian spy so they shot you then they realized their mistake
+                        so they brought you in, gave you food and drink then flew you back to America.
+                                                                      ____
+                           __________  |    |  ____      ___         |    |
+                                |      |____| |         |     |\   | |     |
+                                |      |    | |----     |---  | \  | |     |
+                                |      |    | |____     |___  |   \| |____|  
+                                the end.''')
+                if ans_escaped1 == 2:
+                    print('''you got caught.''')
+                if ans_escaped1 == 3:
+                    print('''you ran away but forgot your supplies that you and your team shared out,
+                    now you are lost.''')
+                if ans_escaped1 == 4:
+                    print('''you stabbed them all with the toothbrush you made and looted them for
+                    clothes and Identification.''')
+            if ans_captured == 4:
+                print('''you made a guard kill you.''')
+    else:
+        print('''your grenade hit the celing and exploded. you died.(bad aim ending)''')
+if answer1 == 4:
+    print('''you defused the bomb, you live.(smart ending)''')
